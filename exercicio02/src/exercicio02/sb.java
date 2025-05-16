@@ -9,6 +9,6 @@ package exercicio02;
  *
  * @author aluno.saolucas
  */
-class n1 {
+class sb {
     
 }
