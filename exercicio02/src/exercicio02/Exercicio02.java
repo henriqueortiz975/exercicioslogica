@@ -10,6 +10,10 @@ public class Exercicio02 {
     }
 
     public static String vogais(String n1) {
+        System.out.println("teste");
+        System.out.println("teste");
+        System.out.println("teste");
+        System.out.println("teste");
         return null;
 
     }
