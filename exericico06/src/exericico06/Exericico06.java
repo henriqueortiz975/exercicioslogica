@@ -8,14 +8,24 @@ public class Exericico06 {
         Scanner Objtest = new Scanner(System.in);
         System.out.println("escreva uma palavra");
         String p1 = Objtest.nextLine();
-        sla(p1);
+        boolean re = sla(p1);
+        System.out.println("sua palavra é palíndroma? " + re);
     }
 
-    public static void sla(String p1) {
+    public static boolean sla(String p1) {
         p1 = p1.toUpperCase();
         p1 = p1.replace(" ", "");
-        System.out.println(p1);
+        int n1 = 0;
+        int n2 = p1.length() - 1;
 
+        while (n1 < n2) {
+            if (p1.charAt(n1) != p1.charAt(n2)) {
+                return false;
+            }
+            n1++;
+            n2--;
+        }
+        return true;
     }
 
 }
